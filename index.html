@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/style.css">
     <title>Movie Dashboard</title>
   </head>
-  <body class="bg-slate-900 text-slate-50">
+  <body class="bg-slate-900 text-slate-50 lg:container mx-auto">
     <!-- BARRA DE NAVEGACIÓN -->
-    <div class="border-2">
+    <div class="border-2 columns-1">
       <ul class="flex flex-row p-5 justify-around">
         <li class="hover:text-slate-400"><a href="#">Inicio</a></li>
         <li class="hover:text-slate-400"><a href="#">Descubrir</a></li>
@@ -22,29 +23,36 @@
     </div>
     <!-- TENDENCIAS  -->
     <div class="border-2 p-5">
-      <h1 class="border-2">Películas en tendencia</h1>
-      <div class="border-2">
-        Película 1
-      </div>
-      <div class="border-2">
-        Película 2
+      <h1 class="border-2 p-5">Películas populares</h1>
+      <div class="columns-2">
+        <div class="border-2 bg-cover bg-center bg-[url('./assets/img/enola-holmes.jpg')]">
+          Película 1
+        </div>
+        <div class="border-2 bg-cover bg-center bg-[url('./assets/img/wakanda-forever.jpg')]">
+          Película 2
+        </div>
       </div>
     </div>
     <!-- CONTINUAR VIENDO -->
     <div class="border-2 p-5">
-      <h2 class="border-2">Continuar viendo</h2>
-      <div class="border-2">Pelicula 1</div>
-      <div class="border-2">Pelicula 2</div>
-      <div class="border-2">Pelicula 3</div>
+      <h2 class="border-2 p-5">Continuar viendo</h2>
+      <div class="columns-3">
+        <div class="border-2">Pelicula 1</div>
+        <div class="border-2">Pelicula 2</div>
+        <div class="border-2">Pelicula 3</div>
+      </div>
     </div>
     <!-- MEJOR EVALUADAS -->
     <div class="border-2 p-5">
-      <h2 class="border-2">Mejor evaluadas</h2>
-      <div class="border-2">Pelicula 1</div>
-      <div class="border-2">Pelicula 2</div>
-      <div class="border-2">Pelicula 3</div>
-      <div class="border-2">Pelicula 4</div>
-      <div class="border-2">Pelicula 5</div>
+      <h2 class="border-2 p-5">Mejor evaluadas</h2>
+      <div class="columns-6">
+        <div class="border-2">Pelicula 1</div>
+        <div class="border-2">Pelicula 2</div>
+        <div class="border-2">Pelicula 3</div>
+        <div class="border-2">Pelicula 4</div>
+        <div class="border-2">Pelicula 5</div>
+        <div class="border-2">Pelicula 6</div>
+      </div>
     </div>
   </body>
 </html>
