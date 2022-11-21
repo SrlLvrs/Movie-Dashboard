@@ -1,107 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Movie Dashboard</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/assets/style.css">
-  <title>Movie Dashboard</title>
-</head>
-
-<body class="bg-gradient-to-b from-slate-900 to-slate-500 text-slate-50 lg:container mx-auto">
-  <!-- BARRA DE NAVEGACIÓN -->
-  <div class="border-2 grid grid-cols-2 gap-4">
-    <div class="border-2"></div>
-    <div>
-      <ul class="border-2 flex flex-row justify-around p-5 font-semibold">
-        <li class="hover:text-slate-400"><a href="#">Inicio</a></li>
-        <li class="hover:text-slate-400"><a href="#">Descubrir</a></li>
-        <li class="hover:text-slate-400"><a href="#">Favoritos</a></li>
-        <li class="hover:text-slate-400"><a href="#">Descargado</a></li>
-        <li class="hover:text-slate-400"><a href="#">Configuración</a></li>
-      </ul>
+  <body
+    class="bg-gradient-to-b from-slate-900 to-slate-500 text-slate-50 lg:container mx-auto"
+  >
+    <!-- BARRA DE NAVEGACIÓN -->
+    <div class="border-2 grid grid-cols-4 gap-4">
+        <ul
+          class="border-2 flex flex-row justify-around items-center p-5 font-semibold col-start-2 col-span-2"
+        >
+          <li class="hover:text-slate-400 flex items-center">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 inline-block relative bottom-0.5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Inicio</a
+            >
+          </li>
+          <li class="hover:text-slate-400">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 inline-block relative bottom-0.5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-11-4.69v.447a3.5 3.5 0 001.025 2.475L8.293 10 8 10.293a1 1 0 000 1.414l1.06 1.06a1.5 1.5 0 01.44 1.061v.363a1 1 0 00.553.894l.276.139a1 1 0 001.342-.448l1.454-2.908a1.5 1.5 0 00-.281-1.731l-.772-.772a1 1 0 00-1.023-.242l-.384.128a.5.5 0 01-.606-.25l-.296-.592a.481.481 0 01.646-.646l.262.131a1 1 0 00.447.106h.188a1 1 0 00.949-1.316l-.068-.204a.5.5 0 01.149-.538l1.44-1.234A6.492 6.492 0 0116.5 10z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Descubrir</a
+            >
+          </li>
+          <li class="hover:text-slate-400">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 inline-block relative bottom-0.5"
+              >
+                <path
+                  d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
+                />
+              </svg>
+              Favoritos</a
+            >
+          </li>
+          <li class="hover:text-slate-400">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 inline-block relative bottom-0.5"
+              >
+                <path
+                  d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z"
+                />
+                <path
+                  d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z"
+                />
+              </svg>
+              Descargado</a
+            >
+          </li>
+          <li class="hover:text-slate-400">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 inline-block relative bottom-0.5"
+              >
+                <path
+                  d="M10 3.75a2 2 0 10-4 0 2 2 0 004 0zM17.25 4.5a.75.75 0 000-1.5h-5.5a.75.75 0 000 1.5h5.5zM5 3.75a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5a.75.75 0 01.75.75zM4.25 17a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5h1.5zM17.25 17a.75.75 0 000-1.5h-5.5a.75.75 0 000 1.5h5.5zM9 10a.75.75 0 01-.75.75h-5.5a.75.75 0 010-1.5h5.5A.75.75 0 019 10zM17.25 10.75a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5h1.5zM14 10a2 2 0 10-4 0 2 2 0 004 0zM10 16.25a2 2 0 10-4 0 2 2 0 004 0z"
+                />
+              </svg>
+              Configuración</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <!-- TENDENCIAS  -->
-  <div class="p-5">
-    <h1 class="mb-5 text-xl font-bold">Películas populares</h1>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="grid grid-cols-2 gap-4 h-80 bg-cover bg-[url('./assets/img/enola-holmes.jpg')]">
-        <div class="grid justify-items-start items-end p-3">
+    <!-- TENDENCIAS  -->
+    <div class="p-5">
+      <h1 class="mb-5 text-xl font-bold">Películas populares</h1>
+      <div class="grid grid-cols-2 gap-4">
+        <div
+          class="grid grid-cols-2 gap-4 h-80 bg-cover bg-[url('./assets/img/enola-holmes.jpg')]"
+        >
+          <div class="grid justify-items-start items-end p-3">
+            <p>
+              Enola Holmes 2<br />
+              2022<br />
+              7.5
+            </p>
+          </div>
+          <div class="grid justify-items-end items-end p-3">
+            <button class="bg-red-400 px-2 py-1 opacity-75 hover:opacity-50">
+              Ver ahora
+            </button>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-4 h-80 bg-cover bg-[url('./assets/img/wakanda-forever.jpg')]"
+        >
+          <div class="grid justify-items-start items-end p-3">
+            <p>
+              Black Panther: Wakanda Forever<br />
+              2022<br />
+              7.3
+            </p>
+          </div>
+          <div class="grid justify-items-end items-end p-3">
+            <button class="bg-red-400 px-2 py-1 opacity-75 hover:opacity-50">
+              Ver ahora
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTINUAR VIENDO -->
+    <div class="p-5">
+      <h2 class="mb-5 text-xl font-bold">Continuar viendo</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <div>
+          <div
+            class="grid justify-items-center items-center p-3 bg-cover h-60 hover:brightness-50 bg-[url('./assets/img/emily-the-criminal.jpg')]"
+          >
+            <img
+              src="./assets/img/icon-play.png"
+              alt="icon-play"
+              class="h-10"
+            />
+          </div>
           <p>
-            Enola Holmes 2<br>
-            2022<br>
-            7.5
+            <span class="font-bold">Emily the Criminal</span><br />
+            2022
           </p>
         </div>
-        <div class="grid justify-items-end items-end p-3">
-          <button class="bg-red-400 px-2 py-1 opacity-75 hover:opacity-50">Ver ahora</button>
-        </div>
-      </div>
-      <div class="grid grid-cols-2 gap-4 h-80 bg-cover bg-[url('./assets/img/wakanda-forever.jpg')]">
-        <div class="grid justify-items-start items-end p-3">
+        <div>
+          <div
+            class="grid justify-items-center items-center p-3 bg-cover h-60 hover:brightness-50 bg-[url('./assets/img/falling-for-christmas.jpg')]"
+          >
+            <img
+              src="./assets/img/icon-play.png"
+              alt="icon-play"
+              class="h-10"
+            />
+          </div>
           <p>
-            Black Panther: Wakanda Forever<br>
-            2022<br>
-            7.3
+            <span class="font-bold">Falling for Christmas</span><br />
+            2022
           </p>
         </div>
-        <div class="grid justify-items-end items-end p-3">
-          <button class="bg-red-400 px-2 py-1 opacity-75 hover:opacity-50">Ver ahora</button>
+        <div>
+          <div
+            class="grid justify-items-center items-center p-3 bg-cover h-60 hover:brightness-50 bg-[url('./assets/img/watcher.jpg')]"
+          >
+            <img
+              src="./assets/img/icon-play.png"
+              alt="icon-play"
+              class="h-10"
+            />
+          </div>
+          <p>
+            <span class="font-bold">Watcher</span><br />
+            2022
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <!-- CONTINUAR VIENDO -->
-  <div class="p-5">
-    <h2 class="mb-5 text-xl font-bold">Continuar viendo</h2>
-    <div class="grid grid-cols-3 gap-4">
-      <div>
+    <!-- MEJOR EVALUADAS -->
+    <div class="p-5">
+      <h2 class="mb-5 text-xl font-bold">Mejor evaluadas</h2>
+      <div class="grid grid-cols-6 gap-4">
         <div
-          class="grid justify-items-center items-center p-3 bg-cover h-60 hover:brightness-50 bg-[url('./assets/img/emily-the-criminal.jpg')]">
-          <img src="./assets/img/icon-play.png" alt="icon-play" class="h-10">
-        </div>
-        <p>
-          <span class="font-bold">Emily the Criminal</span><br>
-          2022
-        </p>
-      </div>
-      <div>
+          class="bg-cover bg-center h-80 bg-[url('./assets/img/black-adam.jpg')]"
+        ></div>
         <div
-          class="grid justify-items-center items-center p-3 bg-cover h-60 hover:brightness-50 bg-[url('./assets/img/falling-for-christmas.jpg')]">
-          <img src="./assets/img/icon-play.png" alt="icon-play" class="h-10">
-        </div>
-        <p>
-          <span class="font-bold">Falling for Christmas</span><br>
-          2022
-        </p>
-      </div>
-      <div>
+          class="bg-cover bg-center h-80 bg-[url('./assets/img/fall.jpg')]"
+        ></div>
         <div
-          class="grid justify-items-center items-center p-3 bg-cover h-60 hover:brightness-50 bg-[url('./assets/img/watcher.jpg')]">
-          <img src="./assets/img/icon-play.png" alt="icon-play" class="h-10">
-        </div>
-        <p>
-          <span class="font-bold">Watcher</span><br>
-          2022
-        </p>
+          class="bg-cover bg-center h-80 bg-[url('./assets/img/lost-bullet-2.jpg')]"
+        ></div>
+        <div
+          class="bg-cover bg-center h-80 bg-[url('./assets/img/minions-the-rise-of-gru.jpg')]"
+        ></div>
+        <div
+          class="bg-cover bg-center h-80 bg-[url('./assets/img/smile.jpg')]"
+        ></div>
+        <div
+          class="bg-cover bg-center h-80 bg-[url('./assets/img/to-kill-the-beast.jpg')]"
+        ></div>
       </div>
     </div>
-  </div>
-  <!-- MEJOR EVALUADAS -->
-  <div class="p-5">
-    <h2 class="mb-5 text-xl font-bold">Mejor evaluadas</h2>
-    <div class="grid grid-cols-6 gap-4">
-      <div class="bg-cover bg-center h-80 bg-[url('./assets/img/black-adam.jpg')]"></div>
-      <div class="bg-cover bg-center h-80 bg-[url('./assets/img/fall.jpg')]"></div>
-      <div class="bg-cover bg-center h-80 bg-[url('./assets/img/lost-bullet-2.jpg')]"></div>
-      <div class="bg-cover bg-center h-80 bg-[url('./assets/img/minions-the-rise-of-gru.jpg')]"></div>
-      <div class="bg-cover bg-center h-80 bg-[url('./assets/img/smile.jpg')]"></div>
-      <div class="bg-cover bg-center h-80 bg-[url('./assets/img/to-kill-the-beast.jpg')]"></div>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
