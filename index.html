@@ -12,8 +12,8 @@
 
 <body class="bg-gradient-to-b from-slate-900 to-slate-500 text-slate-50 lg:container mx-auto">
   <!-- BARRA DE NAVEGACIÓN -->
-  <div class="grid grid-cols-4 gap-4">
-    <ul class="flex flex-row justify-around items-center pt-5 font-semibold col-start-2 col-span-2">
+  <div class="grid grid-cols-4 gap-4 border-b p-5 sticky top-0 bg-slate-900 z-40">
+    <ul class="flex flex-row justify-around items-center font-semibold col-start-2 col-span-2">
       <li class="hover:text-slate-400 flex items-center">
         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
             class="w-5 h-5 inline-block relative bottom-0.5">
@@ -60,12 +60,11 @@
       </li>
     </ul>
   </div>
-  </div>
   <!-- TENDENCIAS  -->
   <div class="p-5 pb-0">
     <h1 class="mb-5 text-xl font-bold">Películas populares</h1>
     <div class="grid grid-cols-2 gap-4">
-      <div class="grid grid-cols-2 gap-4 h-80 bg-cover bg-[url('./assets/img/enola-holmes.jpg')]">
+      <div class="grid grid-cols-2 gap-4 h-96 bg-cover bg-[url('./assets/img/enola-holmes.jpg')]">
         <div class="grid justify-items-start items-end p-3">
           <p>
             <span class="font-bold">Enola Holmes 2</span><br />
@@ -267,7 +266,7 @@
     <h2 class="mb-5 text-xl font-bold">Mejor evaluadas</h2>
     <div class="grid grid-cols-6 gap-4">
       <div>
-        <div class="bg-cover bg-center h-80 bg-[url('./assets/img/black-adam.jpg')]"></div>
+        <div class="bg-cover bg-center h-96 bg-[url('./assets/img/black-adam.jpg')]"></div>
         <p>
           <span class="font-bold">Black Adam</span><br>
           2022<br>
@@ -277,7 +276,7 @@
         </p>
       </div>
       <div>
-        <div class="bg-cover bg-center h-80 bg-[url('./assets/img/fall.jpg')]"></div>
+        <div class="bg-cover bg-center h-96 bg-[url('./assets/img/fall.jpg')]"></div>
         <p>
           <span class="font-bold">Fall</span><br>
           2022<br>
@@ -287,7 +286,7 @@
         </p>
       </div>
       <div>
-        <div class="bg-cover bg-center h-80 bg-[url('./assets/img/lost-bullet-2.jpg')]"></div>
+        <div class="bg-cover bg-center h-96 bg-[url('./assets/img/lost-bullet-2.jpg')]"></div>
         <p>
           <span class="font-bold">Lost Bullet 2</span><br>
           2022<br>
@@ -297,7 +296,7 @@
         </p>
       </div>
       <div>
-        <div class="bg-cover bg-center h-80 bg-[url('./assets/img/minions-the-rise-of-gru.jpg')]"></div>
+        <div class="bg-cover bg-center h-96 bg-[url('./assets/img/minions-the-rise-of-gru.jpg')]"></div>
         <p>
           <span class="font-bold">Minions: The Rise of Gru</span><br>
           2022<br>
@@ -307,7 +306,7 @@
         </p>
       </div>
       <div>
-        <div class="bg-cover bg-center h-80 bg-[url('./assets/img/smile.jpg')]"></div>
+        <div class="bg-cover bg-center h-96 bg-[url('./assets/img/smile.jpg')]"></div>
         <p>
           <span class="font-bold">Smile</span><br>
           2022<br>
@@ -317,7 +316,7 @@
         </p>
       </div>
       <div>
-        <div class="bg-cover bg-center h-80 bg-[url('./assets/img/to-kill-the-beast.jpg')]"></div>
+        <div class="bg-cover bg-center h-96 bg-[url('./assets/img/to-kill-the-beast.jpg')]"></div>
         <p>
           <span class="font-bold">To Kill the Beast</span><br>
           2022<br>
@@ -327,6 +326,10 @@
         </p>
       </div>
     </div>
+  </div>
+  <!-- FOOTER -->
+  <div class="grid grid-cols-1 justify-items-center p-5 border-t">
+    <p>Creado usando HTML y Tailwind por Israel Olivares / @srllvrs.dev en Instagram</p>
   </div>
 </body>
 
