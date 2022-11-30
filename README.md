@@ -1,5 +1,8 @@
-# Movie-Dashboard
-Un mockup en HTML para una aplicación para ver, descargar y descubrir películas.
+# Movie Dashboard
+Un mockup en HTML de una aplicación para ver, descargar y descubrir películas.
 
-Hecho con HTML y Tailwind CSS.
+Hecho con HTML y Tailwind CSS (Por CDN).
 Actualmente sólo posee la vista de escritorio.
+
+Puedes revisar una vista en vivo de éste proyecto en:
+https://srllvrs.github.io/Movie-Dashboard/
